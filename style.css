@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap");
+* {
+  font-family: "Cairo", sans-serif;
+  padding: 0px; /* remove default padding of page*/
+  margin: 0px; /* remove default margin of page*/
+  box-sizing: border-box; /*use it when width : 100% with position : fixed to justify spaces with border of whole page */
+  scroll-behavior: smooth; /* make scroll and navigation smooooth1*/
+}
+
+.ClassHeader {
+  display: flex; /* convert from dispaly :block to inline-block*/
+  justify-content: space-between;
+  align-items: center; /* down links of nav bar center */
+  color: white;
+  height: 50px;
+  padding: 0px 100px; /*for a links of nav  */
+  border-top: solid red 2px;
+  position: fixed; /*fix nav bar with scroll page must use width 100%*/
+  width: 100%; /* use it with posision : fixed */
+  background-color: rgb(58, 11, 102);
+  z-index: 999; /* higher layer to avoid lottiefile to appear over nav bar*/
+}
+
+nav a {
+  text-decoration: none; /* remove underline of link*/
+  width: 100%;
+  color: white;
+  margin-right: 10px; /* nav a */
+  font-size: 18px;
+  transition: ease 0.5s;
+}
+nav a:hover {
+  color: red;
+  font-size: 20px;
+}
+
+.CarsourClass {
+  background: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(images/2.jpg);
+
+  /* background: linear-gradient(to right bottom,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+   blue; */ /*use 2 RGBA & RGBA   للغامق  وللفاتح ونحدد اتجاة تدرج السطوع سواء لون أو صورة*/
+  height: 100vh; /*fill screen */
+  background-attachment: fixed; /*fix it with scroll*/
+  background-position: center; /*center image in screen*/
+  background-size: cover; /*fit with screen*/
+  display: flex;
+  align-items: center; /* must use display : flex نزلت ال  Div لتحت*/
+  color: white;
+}
+.CarsourClass div {
+  margin-left: 30px;
+}
+.CarsourClass span {
+  color: red;
+  text-transform: capitalize;
+}
+
+.CarsourClass a {
+  color: white;
+  text-decoration: none;
+  padding: 10px; /*padding to increase button size from inside don't use height with button*/
+  background-color: rgb(58, 11, 102);
+  border-radius: 10px;
+  display: inline-block; /* to enable margin attribute*/
+  margin-top: 10px !important;
+  /* font-size: 18px; */
+  transition: ease 0.5s;
+}
+
+.CarsourClass a:hover {
+  /* font-size: 20px; */
+  transform: scale(1.1); /* transform: scale(1.1, 1.3); */
+  background-color: red;
+}
+
+.ServicesSection h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* to make all cards not in same line wrap them into more line */
+  justify-content: space-evenly;
+}
+
+.ServicesSection .container .card {
+  width: 30%;
+  text-align: center;
+  box-shadow: 3px 3px 6px 6px gray;
+  margin-bottom: 50px;
+  padding: 10px; /* padding inner text */
+}
+
+.container h3 {
+  color: red;
+}
+
+/* .container .card > div {
+  color: rgb(58, 11, 102);
+  font-size: 50px;
+} */
+/* another way */
+.ServicesSection .shapeicon {
+  color: rgb(58, 11, 102);
+  font-size: 50px;
+}
+
+.portofilioClass {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
+.portofilioClass h2 {
+  border-bottom: solid red;
+  display: inline-block; /*make border same width of above h2*/
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.portofilioClass .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.portofilioClass .card {
+  color: black;
+  width: 30%;
+  background-color: white;
+  border: solid black;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  overflow: hidden; /* cut increases in image out of border card*/
+}
+
+.portofilioClass button {
+  padding: 2px 10px;
+  background-color: rgb(58, 11, 102);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.portofilioClass button:hover {
+  color: white;
+  background-color: red;
+  font-size: 18px;
+}
+.portofilioClass img {
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+  height: 250px;
+  object-fit: cover; /* fit image in div */
+}
+.portofilioClass .card p {
+  font-size: 13px;
+  /* line-height: 1.6; */
+  font-weight: 700;
+  padding: 2px;
+}
+
+.NTIA7laGroup {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NTIA7laGroup-desc {
+  width: 60%;
+  text-align: center;
+}
+
+.NTIA7laGroup-img {
+  width: 25%;
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.Members {
+  padding: 30px;
+  background-image: url(images/MinyaBG.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Members img {
+  width: 16em;
+  height: 16em;
+  /* border-radius: 50%; */ /*FANCY-BORDER-RADIUS*/
+  border-radius: 49% 51% 54% 46% / 30% 33% 67% 70%;
+  border: solid white;
+  margin-right: 5px;
+}
+
+.NTIA7laGroup-img-rtl {
+  width: 25%;
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
+  border-radius: 10px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: rgb(58, 11, 102);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: crimson;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(58, 11, 102);
+}
+
+.up {
+  color: crimson;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 40px;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+}
+.up :hover {
+  color: rgb(58, 11, 102);
+}
+
+/*---------------------- Map -------------------*/
+.map {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.map div {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 10px 35px 0px lightblue !important;
+}
+
+.map iframe {
+  width: 100% !important;
+}
+
+/* ---------------------------- contact ------------------------  */
+
+.contact {
+  padding: 100px;
+  text-align: center;
+  background: rgb(15, 43, 195);
+  /*   https://cssgradient.io/  تدرج الألوان */
+  background: linear-gradient(
+    310deg,
+    rgba(15, 43, 195, 0.31985294117647056) 29%,
+    rgba(21, 84, 159, 1) 100%
+  );
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 50px;
+  border-bottom: solid;
+  display: inline-block;
+}
+
+.inputForm {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputForm label {
+  font-size: 12px;
+  position: absolute;
+  top: 30%;
+  left: 5px;
+  /* transform: (-40); */
+  pointer-events: none; /*علشان نقف على اى مكان فى input يرتفع اللابل*/
+  transition: ease 1s;
+}
+
+.inputForm input {
+  border: none;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  padding: 5px 5px;
+}
+
+.inputForm input:hover ~ label,
+.inputForm input:valid ~ label {
+  /*.inputForm input:valid  مترجعش كتابة الليبل لو كتب فى الانبوت*/
+  top: 4%;
+  opacity: 0;
+}
+.send {
+  background-color: rgb(41, 7, 34);
+  color: white;
+  padding: 0px 20px;
+  transform: ease 0.5s;
+  border: none;
+  border-radius: 10px;
+  transition: ease 0.5s;
+}
+.send:hover {
+  background-color: blueviolet;
+  transform: scale(1.2);
+}
